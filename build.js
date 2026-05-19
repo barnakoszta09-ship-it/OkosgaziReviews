@@ -172,6 +172,7 @@ function buildHtml(d) {
     ['{{DAILY_COST_25KG}}', String(dailyCost(pkgPerKg, 0.485))],
     ['{{DAILY_COST_35KG}}', String(dailyCost(pkgPerKg, 0.625))],
     // CTA + ár elemzés
+    ['{{PRODUCT_IMAGE_URL}}', d.product_image_url || ''],
     ['{{CTA_TITLE}}',         d.cta_title],
     ['{{CTA_SUBTITLE}}',      d.cta_subtitle],
     ['{{PRICE_ANALYSIS_P2}}', d.price_analysis_p2 || ''],
@@ -182,6 +183,14 @@ function buildHtml(d) {
   for (const [from, to] of pairs) {
     html = html.split(from).join(String(to ?? ''));
   }
+
+  // Ha nincs termékkép URL → teljes kép-blokk eltávolítása
+  if (!d.product_image_url) {
+    html = html.replace(/\s*<!-- IF_IMAGE_START -->[\s\S]*?<!-- IF_IMAGE_END -->/g, '');
+  } else {
+    html = html.replace(/<!-- IF_IMAGE_START -->\n\s*/g, '').replace(/\s*<!-- IF_IMAGE_END -->/g, '');
+  }
+
   return html;
 }
 

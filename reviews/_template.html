@@ -232,8 +232,11 @@
       </div>
     </div>
 
-    <!-- SCORE CARD — szerkesztői felül, közösségi alul -->
+    <!-- SCORE CARD — kép felül, szerkesztői középen, közösségi alul -->
     <div class="hero-score-card">
+      <!-- IF_IMAGE_START -->
+      <img src="{{PRODUCT_IMAGE_URL}}" alt="{{PRODUCT_NAME}}" style="width:100%; border-radius:12px; margin-bottom:1.2rem; object-fit:contain; max-height:200px; background:rgba(255,255,255,0.06);" loading="lazy" />
+      <!-- IF_IMAGE_END -->
       <div style="font-size:0.68rem; color:rgba(255,255,255,0.4); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.3rem;">Szerkesztői értékelés</div>
       <div class="hero-score-big">{{EDITORIAL_SCORE}}</div>
       <div class="hero-score-label">OkosgazdiReviews</div>

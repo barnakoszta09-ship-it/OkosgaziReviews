@@ -113,7 +113,26 @@
     });
   }
 
-  // ── 8. Automata slug normalizálás ───────────────────────────────────────────
+  // ── 8. Termékkép URL ────────────────────────────────────────────────────────
+  let productImageUrl = '';
+  const imgSelectors = [
+    '.product-gallery img',
+    '.product-image img',
+    '.gallery-image img',
+    '[class*="product-gallery"] img',
+    '[class*="ProductGallery"] img',
+    'img[src*="/uimg/"]',
+    'img[src*="storage/products"]',
+  ];
+  for (const sel of imgSelectors) {
+    const el = document.querySelector(sel);
+    if (el && el.src && !el.src.includes('data:') && el.naturalWidth > 50) {
+      productImageUrl = el.src;
+      break;
+    }
+  }
+
+  // ── 9. Automata slug normalizálás ───────────────────────────────────────────
   const utmCampaign = slug
     .replace(/-(?:dog|adult|gf|grain-free|junior|puppy|senior)/gi, '')
     .replace(/--+/g, '-')
@@ -129,8 +148,9 @@
     product_name_hu: 'TODO: pl. "Bárány & Lazac"',
     brand,
     category:        'TODO: pl. "Adult" / "Puppy" / "Senior"',
-    okosgazdi_url:   url,
-    date_published:  new Date().toISOString().slice(0, 10),
+    okosgazdi_url:      url,
+    product_image_url:  productImageUrl,
+    date_published:     new Date().toISOString().slice(0, 10),
 
     price_huf:  priceHuf,
     weight_kg:  weightKg,
