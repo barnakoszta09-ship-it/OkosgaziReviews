@@ -454,6 +454,8 @@
       border: 2px solid transparent;
     }
 
+    .cat-card { cursor: pointer; }
+
     .cat-card:hover {
       border-color: var(--gold);
       transform: translateY(-4px);
@@ -472,6 +474,14 @@
       font-size: 0.85rem;
       color: var(--text-muted);
     }
+
+    .cat-card.active {
+      border-color: var(--gold);
+      background: #fffbf0;
+      box-shadow: 0 0 0 3px rgba(232,162,23,0.18);
+    }
+
+    .review-hidden { display: none !important; }
 
     /* ── UPCOMING REVIEW CARDS ── */
     .upcoming-grid {
@@ -708,7 +718,7 @@
       <div class="section-label">Review-k</div>
       <h2 class="section-title">Tesztelt termékek</h2>
       <p class="section-desc">Részletes elemzés, összetevő-bontás és közösségi visszajelzések — folyamatosan bővülő lista.</p>
-      <div class="featured-card">
+      <div class="featured-card" data-tags="aktiv">
         <div>
           <div class="featured-badge">⭐ Szerkesztői ajánlat</div>
           <h3 class="featured-title">Delikan Prima Energy Red Meat</h3>
@@ -745,10 +755,10 @@
         </div>
       </div>
       <!-- Alice review kártyák -->
-      <div class="section-label" style="margin-top:3rem; margin-bottom:0.4rem;">Alice kutyatáp termékcsalád</div>
+      <div id="alice-label" class="section-label" style="margin-top:3rem; margin-bottom:0.4rem;">Alice kutyatáp termékcsalád</div>
       <div class="upcoming-grid">
 
-        <a href="reviews/alice-active-pork-spinach.html" class="upcoming-card" style="display:block; text-decoration:none;">
+        <a href="reviews/alice-active-pork-spinach.html" class="upcoming-card" data-tags="aktiv" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.5 · Közösségi: 4.7</div>
           <div class="upcoming-emoji">🥬</div>
           <div class="upcoming-brand">Alice</div>
@@ -757,7 +767,7 @@
           <div class="upcoming-price">11 590 Ft <span>/ 17 kg • 682 Ft/kg</span></div>
         </a>
 
-        <a href="reviews/alice-balance-lamb-pumpkin.html" class="upcoming-card" style="display:block; text-decoration:none;">
+        <a href="reviews/alice-balance-lamb-pumpkin.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.4 · Közösségi: 4.7</div>
           <div class="upcoming-emoji">🐑</div>
           <div class="upcoming-brand">Alice</div>
@@ -766,7 +776,7 @@
           <div class="upcoming-price">12 190 Ft <span>/ 18 kg • 677 Ft/kg</span></div>
         </a>
 
-        <a href="reviews/alice-balance-plus-rabbit-lamb.html" class="upcoming-card" style="display:block; text-decoration:none;">
+        <a href="reviews/alice-balance-plus-rabbit-lamb.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.2 · Közösségi: 4.6</div>
           <div class="upcoming-emoji">🐇</div>
           <div class="upcoming-brand">Alice</div>
@@ -775,7 +785,7 @@
           <div class="upcoming-price">12 980 Ft <span>/ 18 kg • 721 Ft/kg</span></div>
         </a>
 
-        <a href="reviews/alice-croquettes-pork-potato.html" class="upcoming-card" style="display:block; text-decoration:none;">
+        <a href="reviews/alice-croquettes-pork-potato.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 3.7 · Közösségi: 4.3</div>
           <div class="upcoming-emoji">🥔</div>
           <div class="upcoming-brand">Alice</div>
@@ -784,7 +794,7 @@
           <div class="upcoming-price">10 699 Ft <span>/ 18 kg • 594 Ft/kg</span></div>
         </a>
 
-        <a href="reviews/alice-puppy-junior-beef-rice.html" class="upcoming-card" style="display:block; text-decoration:none;">
+        <a href="reviews/alice-puppy-junior-beef-rice.html" class="upcoming-card" data-tags="kolyok" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.3 · Közösségi: 4.6</div>
           <div class="upcoming-emoji">🐾</div>
           <div class="upcoming-brand">Alice</div>
@@ -793,7 +803,7 @@
           <div class="upcoming-price">12 490 Ft <span>/ 17 kg • 735 Ft/kg</span></div>
         </a>
 
-        <a href="reviews/ambrosia-dog-adult-lamb-salmon.html" class="upcoming-card" style="display:block; text-decoration:none;">
+        <a href="reviews/ambrosia-dog-adult-lamb-salmon.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.6 · Közösségi: 4.9</div>
           <div class="upcoming-emoji">🐟</div>
           <div class="upcoming-brand">Ambrosia</div>
@@ -822,22 +832,22 @@
       <h2 class="section-title">Melyik kutyának,<br />melyik táp a legjobb?</h2>
       <p class="section-desc">Szűrj a kutyád igényei alapján — minden korosztálynak és életmódhoz megtaláljuk a megfelelő táplálékot.</p>
       <div class="categories-grid">
-        <div class="cat-card">
+        <div class="cat-card" data-filter="allergiás">
           <div class="cat-icon">🌸</div>
           <h3>Allergiás kutyáknak</h3>
           <p>Gabonamentes, hipoallergén formulák érzékeny emésztésű kutyáknak</p>
         </div>
-        <div class="cat-card">
+        <div class="cat-card" data-filter="aktiv">
           <div class="cat-icon">🏃</div>
           <h3>Aktív kutyáknak</h3>
           <p>Energia-sűrű, magas fehérjetartalmú tápok sportos, munkakutyáknak</p>
         </div>
-        <div class="cat-card">
+        <div class="cat-card" data-filter="kolyok">
           <div class="cat-icon">🐶</div>
           <h3>Kölyökkutyáknak</h3>
           <p>Optimális fejlődést támogató, DHA-dús formulák 1 éves korig</p>
         </div>
-        <div class="cat-card">
+        <div class="cat-card" data-filter="senior">
           <div class="cat-icon">🦴</div>
           <h3>Senior kutyáknak</h3>
           <p>Ízület- és szívvédő összetevőkkel, könnyebben emészthető receptúrák</p>
@@ -892,6 +902,58 @@
       <p class="footer-copy">© 2026 OkosgazdiReviews.hu — Kapcsolódó webshop: <a href="https://okosgazdi.hu?utm_source=okosgazdireviews&utm_medium=footer" style="color:var(--gold); text-decoration:underline;" target="_blank" rel="noopener">okosgazdi.hu</a></p>
     </div>
   </footer>
+
+
+<script>
+(function () {
+  var activeFilter = null;
+
+  var catCards = document.querySelectorAll('.cat-card[data-filter]');
+  var reviewCards = document.querySelectorAll('[data-tags]');
+  var aliceLabel = document.getElementById('alice-label');
+
+  function applyFilter(filter) {
+    reviewCards.forEach(function (card) {
+      var tags = (card.getAttribute('data-tags') || '').split(' ');
+      if (!filter || tags.indexOf(filter) !== -1) {
+        card.classList.remove('review-hidden');
+      } else {
+        card.classList.add('review-hidden');
+      }
+    });
+
+    // Hide Alice label if all Alice cards are hidden
+    if (aliceLabel) {
+      var aliceCards = document.querySelectorAll('.upcoming-card[data-tags]');
+      var anyVisible = false;
+      aliceCards.forEach(function (c) { if (!c.classList.contains('review-hidden')) anyVisible = true; });
+      aliceLabel.style.display = anyVisible ? '' : 'none';
+    }
+
+    // Scroll to reviews section when a filter is applied
+    if (filter) {
+      document.getElementById('reviews').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  catCards.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var f = btn.getAttribute('data-filter');
+      if (activeFilter === f) {
+        // Toggle off
+        activeFilter = null;
+        btn.classList.remove('active');
+        applyFilter(null);
+      } else {
+        catCards.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeFilter = f;
+        applyFilter(f);
+      }
+    });
+  });
+}());
+</script>
 
 </body>
 </html>
