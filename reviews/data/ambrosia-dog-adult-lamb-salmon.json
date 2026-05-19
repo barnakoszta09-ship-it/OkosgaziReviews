@@ -1,0 +1,125 @@
+{
+  "slug": "ambrosia-dog-adult-lamb-salmon",
+  "utm_campaign": "ambrosia-lamb-salmon",
+  "product_name": "Ambrosia Dog Adult GF Lamb & Fresh Salmon",
+  "product_name_hu": "Bárány & Friss Lazac",
+  "brand": "Ambrosia",
+  "category": "Adult / Prémium",
+  "okosgazdi_url": "https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon",
+  "date_published": "2026-05-19",
+
+  "price_huf": 21990,
+  "weight_kg": 12,
+
+  "protein_pct": 32,
+  "fat_pct": 18,
+  "ash_pct": 8,
+  "fiber_pct": 3,
+  "moisture_pct": 9,
+
+  "ingredients": "friss csontozott lazac (18%), szárított burgonyapehely, dehidratált bárányfehérje (12%), dehidratált állati fehérje (12%), zöldborsó, sárgaborsó, állati zsír (9%), hidrolizált állati fehérje (9%), lenmag, lazacolaj, cikória, sörélesztő, brokkoli, spenót, vörös áfonya, fekete áfonya, glükózamin (150 mg/kg), kondroitin (150 mg/kg), rozmaring, kurkuma",
+  "main_ingredient": "Friss lazac 18%",
+  "chicken_free": true,
+
+  "editorial_score": 4.6,
+  "community_score": 4.9,
+  "community_count": 25,
+
+  "score_protein":  5.0,
+  "score_taste":    4.8,
+  "score_digest":   4.7,
+  "score_value":    3.0,
+  "score_quality":  4.8,
+
+  "protein_note": "Az általunk tesztelt tápok legmagasabb értéke",
+  "fat_note":     "Lazacolaj és állati zsír — omega-gazdag",
+  "ash_note":     "Elfogadható ásványianyag-szint",
+  "fiber_note":   "Cikória (FOS) prebiotikummal kombinálva",
+
+  "hero_badge":     "🐟 Ultra-prémium gabonamentes formula",
+  "hero_h1_line1":  "Ambrosia Dog Adult GF",
+  "hero_h1_line2":  "Lamb & Fresh Salmon — Review",
+  "hero_subtitle":  "Friss csontozott lazac (18%) az összetevők élén, 32% fehérje, gabonamentes, kondroitin + glükózamin, taurin, L-karnitin — holisztikus formula allergiás és ízületproblémás felnőtt kutyáknak.",
+  "hero_meta_tags": [
+    "🐕 Felnőtt kutyáknak",
+    "🐟 Friss lazac 18%",
+    "🌾 Gabonamentes",
+    "🦴 Kondroitin + Glükózamin",
+    "🚫 Csirkementes",
+    "🇫🇷 Francia gyártás"
+  ],
+  "summary_emoji": "🐟",
+
+  "who_for": "Allergiás (főleg csirke- vagy gabonaérzékeny), ízületproblémás, vagy szőr- és bőrproblémákkal küzdő felnőtt kutyáknak. Vizsláknak, agároknak, labradoroknak akik a legjobbat érdemlik. Aki nem akar kompromisszumot az összetevőkben, és az ár másodlagos — ez az Alice fölötti kategória.",
+
+  "pros": [
+    "✅ Friss lazac (18%) az összetevők <em>első</em> helyén",
+    "✅ 32% fehérje — kiemelkedően magas",
+    "✅ Teljesen gabonamentes és gluténmentes",
+    "✅ Kondroitin + glükózamin (150 mg/kg) ízületeknek",
+    "✅ Taurin (1.000 mg) + L-karnitin szívvédelemre",
+    "✅ Brokkoli, spenót, vörös + fekete áfonya, rozmaring"
+  ],
+  "cons": [
+    "❌ Legdrágább az általunk tesztelt tápok közül (1.833 Ft/kg)",
+    "❌ Burgonyapehely a 2. helyen — feldolgozott szénhidrátforrás",
+    "❌ Dehidratált állati fehérje — nem nevesített forrás",
+    "❌ Kis kiszerelés: csak 12 kg (vagy 2×12 kg)"
+  ],
+
+  "reviews": [
+    {
+      "name": "Vendég",
+      "stars": 5,
+      "text": "Harmadik alkalommal rendeltem. Mindenképpen gabonamentes tápot szerettem volna az esetleges allergia kivédése érdekében. Buksi nagyon szereti a halat, a lazacosat választottam. Az előző tápról való átállással semmi gondom nem volt. Az állatorvos szerint nagyon jó kondiban van a kutya, se nem kövér, nem is sovány. Maradok ennél a tápnál.",
+      "date": "11 hónapja"
+    },
+    {
+      "name": "Vendég",
+      "stars": 5,
+      "text": "Közepes testű kutyám nagyon kényes a tápokra — hullik a szőre, ha nem megfelelőt kap. Szívesen fogyasztja és jó étvággyal eszi az Ambrosia bárányos+halas tápot. Nem hullik a szőre a kutyámnak, ha ezt eszi! Köszönöm!",
+      "date": "1 éve és 10 hónapja"
+    },
+    {
+      "name": "ApacsGazda",
+      "stars": 5,
+      "text": "Remek táp, nemcsak ár/érték arányban. Apacs örömmel eszi, telíti, nem éhes utána. Teljesen normalizálódott a széklete, amit az előző tápnál nem mondhatam el. Plusz fontosak benne az ízületvédő összetevők — a kutya gyengébb ízületeire kedvezően hat.",
+      "date": "2 éve és 7 hónapja"
+    },
+    {
+      "name": "Vendég",
+      "stars": 5,
+      "text": "Német juhász kutyusaimnak több mint egy éve ezt rendelem. Mindent tartalmaz amire szükségük van, szívesen eszik, a szőrük is selymes, gyönyörű. Csak ajánlani tudom.",
+      "date": "6 hónapja"
+    }
+  ],
+
+  "faq": [
+    {
+      "q": "Miért ennyivel drágább az Ambrosia mint más tápok?",
+      "a": "Az Ambrosia ára (1.833 Ft/kg) az összetevők minőségét tükrözi: friss csontozott lazac az első helyen (18%), teljesen gabonamentes formula, kondroitin és glükózamin (150 mg/kg), taurin (1.000 mg), L-karnitin, brokkoli, spenót, vörös és fekete áfonya. Francia gyártás, Vet Approved Formula minősítés. Összehasonlításképpen: Acana, Orijen szintű tápok 2.500–4.000 Ft/kg körül mozognak."
+    },
+    {
+      "q": "Allergiás kutyának jó az Ambrosia Lamb & Salmon?",
+      "a": "Igen — gabonamentes (nincs búza, árpa, kukorica, rizs), gluténmentes, GMO-mentes és csirkementes is. A hidrolizált állati fehérje az összetevők között tovább csökkenti az allergiás reakció kockázatát. Sok gazdi számolt be arról, hogy gabonaérzékeny vagy csirkeallergiás kutyájánál az Ambrosia megoldást hozott."
+    },
+    {},
+    {
+      "q": "Mit jelent a gyártó 60%-os hústartalom állítása?",
+      "a": "A gyártó szerint az összes állati fehérjeforrás együttesen eléri a 60%-ot: friss lazac (18%) + bárányfehérje (12%) + állati fehérje (12%) + hidrolizált fehérje (9%) + lazacolaj. Fontos tudni, hogy a friss lazac víztartalma magas — szárítás után kisebb tömeget képvisel — ez szokásos iparági módszer. Ettől függetlenül az összetevők sorrendje és a 32% fehérje valóban kiváló értéket jelent."
+    }
+  ],
+
+  "cta_title":         "A természetükhöz legközelebb álló táp",
+  "cta_subtitle":      "Friss lazac az első helyen, 32% fehérje, gabonamentes, kondroitin + glükózamin — Vet Approved Formula.",
+  "price_analysis_p2": "Összehasonlításképpen az Alice Balance Lamb & Pumpkin 677 Ft/kg — az Ambrosia közel háromszor annyiba kerül. Ezt az árat a friss lazac első helyen, a kondroitin + glükózamin, a taurin, az L-karnitin és a komplex növényi adalékok indokolják. Hasonló összetételű gabonamentes ultra-prémium tápok (Acana, Orijen) 2.500–4.000 Ft/kg körül mozognak — ahhoz képest az Ambrosia még versenyképes.",
+  "price_analysis_p3": "Nagy testű kutyáknál (30+ kg) a napi etetési költség elérheti a 700–900 Ft-ot, ami havonta 21.000–27.000 Ft. Kis- és közepes testű kutyáknál (10–20 kg) ez 262–432 Ft/nap.",
+
+  "index_emoji": "🐟",
+  "index_desc":  "Gabonamentes prémium táp — 18% friss lazac, 32% fehérje, glükózamin & kondroitin.",
+
+  "meta_description":   "Ambrosia Dog Adult Grain Free Lamb & Fresh Salmon review: friss lazac (18%) az első összetevőként, 32% fehérje, gabonamentes, kondroitin + glükózamin. Ultra-prémium formula — 4.6/5 szerkesztői értékelés.",
+  "meta_keywords":      "Ambrosia Dog Adult Lamb Salmon review, ambrosia gabonamentes kutyatáp, ambrosia bárány lazac vélemény, ultra prémium kutyatáp",
+  "og_description":     "Friss lazac (18%) az első helyen, 32% fehérje, gabonamentes, kondroitin + glükózamin. Ultra-prémium formula 1.833 Ft/kg.",
+  "schema_review_body": "Az Ambrosia Dog Adult Grain Free Lamb & Fresh Salmon ultra-prémium gabonamentes száraztáp, friss csontozott lazaccal (18%) az összetevők élén. 32% fehérje, 18% zsír, kondroitin + glükózamin (150 mg/kg), taurin, L-karnitin. 4.6/5 szerkesztői értékelés, 4.9/5 közösségi értékelés 25 vélemény alapján."
+}
