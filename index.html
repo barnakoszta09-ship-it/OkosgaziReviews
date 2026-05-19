@@ -482,17 +482,18 @@
     }
 
     .upcoming-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.11);
+      background: var(--white);
+      border: 2px solid transparent;
       border-radius: 16px;
       padding: 1.5rem;
+      box-shadow: var(--shadow);
       transition: all 0.25s ease;
     }
 
     .upcoming-card:hover {
-      background: rgba(255,255,255,0.09);
-      border-color: rgba(232,162,23,0.4);
-      transform: translateY(-3px);
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
     }
 
     .upcoming-soon-badge {
@@ -501,8 +502,8 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       background: rgba(232,162,23,0.12);
-      color: var(--gold);
-      border: 1px solid rgba(232,162,23,0.28);
+      color: #b07a0a;
+      border: 1px solid rgba(232,162,23,0.4);
       border-radius: 100px;
       padding: 0.22rem 0.7rem;
       display: inline-block;
@@ -522,7 +523,7 @@
 
     .upcoming-name {
       font-size: 1rem;
-      color: var(--white);
+      color: var(--green);
       font-family: 'Playfair Display', serif;
       margin-bottom: 0.5rem;
       line-height: 1.35;
@@ -530,7 +531,7 @@
 
     .upcoming-desc {
       font-size: 0.84rem;
-      color: rgba(255,255,255,0.48);
+      color: var(--text-muted);
       line-height: 1.55;
       margin-bottom: 1rem;
     }
@@ -539,12 +540,12 @@
       font-family: 'Playfair Display', serif;
       font-size: 1.05rem;
       font-weight: 700;
-      color: var(--gold);
+      color: var(--green);
     }
 
     .upcoming-price span {
       font-size: 0.78rem;
-      color: rgba(255,255,255,0.35);
+      color: var(--text-muted);
       font-family: 'Source Sans 3', sans-serif;
       font-weight: 300;
     }
