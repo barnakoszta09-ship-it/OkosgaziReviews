@@ -193,7 +193,14 @@
     .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 1.5rem 0; }
     .footer-copy { font-size: 0.82rem; color: rgba(255,255,255,0.3); }
     @media (max-width: 600px) { .nav-links { display: none; } }
+    /* Lucide SVG icon sizing */
+    .section-icon svg, .review-icon svg { display: block; width: 2rem; height: 2rem; }
+    .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    .hero-cta-group .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    a.btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
   </style>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -221,10 +228,10 @@
         <!-- Példa: <span class="meta-tag">🐕 Felnőtt kutyáknak</span> -->
         <span class="meta-tag">🐕 Felnőtt kutyáknak</span>
         <span class="meta-tag">🐟 Friss lazac 18%</span>
-        <span class="meta-tag">🌾 Gabonamentes</span>
-        <span class="meta-tag">🦴 Kondroitin + Glükózamin</span>
+        <span class="meta-tag"><i data-lucide="wheat"></i> Gabonamentes</span>
+        <span class="meta-tag"><i data-lucide="bone"></i> Kondroitin + Glükózamin</span>
         <span class="meta-tag">🚫 Csirkementes</span>
-        <span class="meta-tag">🇫🇷 Francia gyártás</span>
+        <span class="meta-tag">Francia gyártás</span>
       </div>
       <div class="stars-row">
         <span class="stars-icons">★★★★½</span>
@@ -232,7 +239,7 @@
         <span class="stars-count">/ 5.0 — 25 értékelés</span>
       </div>
       <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=ambrosia-lamb-salmon" class="btn btn-primary" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál</a>
+        <a href="https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=ambrosia-lamb-salmon" class="btn btn-primary" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál</a>
         <a href="#osszefoglalo" class="btn btn-outline-white">Gyors összefoglaló</a>
       </div>
     </div>
@@ -293,7 +300,7 @@
 
     <!-- ÖSSZETEVŐ ELEMZÉS -->
     <div class="block">
-      <h2 class="block-title"><span>🔬</span>Összetevő-elemzés</h2>
+      <h2 class="block-title"><span><i data-lucide="microscope"></i></span>Összetevő-elemzés</h2>
       <table class="ing-table">
         <thead>
           <tr><th>Tápanyag</th><th>Érték</th><th>Értékelés</th><th>Megjegyzés</th></tr>
@@ -338,7 +345,7 @@
 
     <!-- ÉRTÉKELÉSEK -->
     <div class="block">
-      <h2 class="block-title"><span>💬</span>Közösségi értékelések</h2>
+      <h2 class="block-title"><span><i data-lucide="message-circle"></i></span>Közösségi értékelések</h2>
       <div class="review-grid">
 
         <!-- REVIEW 1 -->
@@ -439,7 +446,7 @@
       <h2>A természetükhöz legközelebb álló táp</h2>
       <p>Friss lazac az első helyen, 32% fehérje, gabonamentes, kondroitin + glükózamin — Vet Approved Formula.</p>
       <div class="cta-price">21.990 Ft <span>/ 12 kg • 1833 Ft/kg • Okosgazdi.hu-n</span></div>
-      <a href="https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon?utm_source=okosgazdireviews&utm_medium=cta&utm_campaign=ambrosia-lamb-salmon" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál →</a>
+      <a href="https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon?utm_source=okosgazdireviews&utm_medium=cta&utm_campaign=ambrosia-lamb-salmon" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál →</a>
     </div>
 
   </main>
@@ -479,7 +486,7 @@
       </ul>
     </div>
     <div style="text-align:center;">
-      <a href="https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=ambrosia-lamb-salmon" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener">🛒 Megveszem →</a>
+      <a href="https://okosgazdi.hu/ambrosia-dog-adult-lamb-and-fresh-salmon?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=ambrosia-lamb-salmon" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Megveszem →</a>
     </div>
   </aside>
 </div>
@@ -499,6 +506,7 @@
   </div>
 </footer>
 
+<script>lucide.createIcons();</script>
 </body>
 </html>
 
@@ -549,10 +557,10 @@ Lamb & Fresh Salmon — Review         H1 második sor          pl. "Pork & Spin
 Friss csontozott lazac (18%) az összetevők élén, 32% fehérje, gabonamentes, kondroitin + glükózamin, taurin, L-karnitin — holisztikus formula allergiás és ízületproblémás felnőtt kutyáknak.         Hero alcím (1-2 mondat)
 <span class="meta-tag">🐕 Felnőtt kutyáknak</span>
         <span class="meta-tag">🐟 Friss lazac 18%</span>
-        <span class="meta-tag">🌾 Gabonamentes</span>
-        <span class="meta-tag">🦴 Kondroitin + Glükózamin</span>
+        <span class="meta-tag"><i data-lucide="wheat"></i> Gabonamentes</span>
+        <span class="meta-tag"><i data-lucide="bone"></i> Kondroitin + Glükózamin</span>
         <span class="meta-tag">🚫 Csirkementes</span>
-        <span class="meta-tag">🇫🇷 Francia gyártás</span>        Meta chip HTML blokk
+        <span class="meta-tag">Francia gyártás</span>        Meta chip HTML blokk
 🐟         Összefoglaló emoji      pl. "⚡"
 
 Allergiás (főleg csirke- vagy gabonaérzékeny), ízületproblémás, vagy szőr- és bőrproblémákkal küzdő felnőtt kutyáknak. Vizsláknak, agároknak, labradoroknak akik a legjobbat érdemlik. Aki nem akar kompromisszumot az összetevőkben, és az ár másodlagos — ez az Alice fölötti kategória.               Kinek ajánlott szöveg

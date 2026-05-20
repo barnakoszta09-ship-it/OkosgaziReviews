@@ -337,7 +337,14 @@
     .footer-copy { font-size: 0.82rem; color: rgba(255,255,255,0.3); }
 
     @media (max-width: 600px) { .nav-links { display: none; } }
+    /* Lucide SVG icon sizing */
+    .section-icon svg, .review-icon svg { display: block; width: 2rem; height: 2rem; }
+    .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    .hero-cta-group .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    a.btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
   </style>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -358,7 +365,7 @@
       <div class="hero-breadcrumb">
         <a href="../index.html">Főoldal</a> › <a href="../index.html#reviews">Review-k</a> › Delikan Prima Energy Red Meat
       </div>
-      <div class="hero-badge">🧪 Saját teszt alapján</div>
+      <div class="hero-badge"><i data-lucide="flask-conical"></i> Saját teszt alapján</div>
       <h1>Delikan Prima Energy<br />Red Meat — Review</h1>
       <p class="hero-sub">Min. 45% marha + sertés alapú száraztáp aktív felnőtt kutyáknak. Csirkementes, szójamentes formula — cseh gyártmány, zipzáras csomagolással.</p>
       <div class="hero-meta">
@@ -374,7 +381,7 @@
         <span class="stars-count">/ 5.0 — 298 értékelés</span>
       </div>
       <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="https://okosgazdi.hu/prima-energy-marhaval-es-sertessel?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=delikan-red-meat" class="btn btn-primary" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál</a>
+        <a href="https://okosgazdi.hu/prima-energy-marhaval-es-sertessel?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=delikan-red-meat" class="btn btn-primary" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál</a>
         <a href="#osszefoglalo" class="btn btn-outline-white">Gyors összefoglaló</a>
       </div>
     </div>
@@ -426,7 +433,7 @@
 
     <!-- INGREDIENTS -->
     <div class="block">
-      <h2 class="block-title"><span class="block-title-icon">🔬</span>Összetevő-elemzés</h2>
+      <h2 class="block-title"><span class="block-title-icon"><i data-lucide="microscope"></i></span>Összetevő-elemzés</h2>
       <table class="ing-table">
         <thead>
           <tr>
@@ -538,7 +545,7 @@
 
     <!-- COMMUNITY REVIEWS -->
     <div class="block">
-      <h2 class="block-title"><span class="block-title-icon">💬</span>Közösségi értékelések</h2>
+      <h2 class="block-title"><span class="block-title-icon"><i data-lucide="message-circle"></i></span>Közösségi értékelések</h2>
       <div class="review-grid">
         <div class="review-card">
           <div class="review-header">
@@ -646,7 +653,7 @@
       <h2>Készen állsz a váltásra?</h2>
       <p>Vásárold meg a Delikan Prima Energy Red Meat tápot Magyarország egyik legjobb kutyatáp webshopjában.</p>
       <div class="cta-price">17.300 Ft <span>/ 20 kg • 865 Ft/kg • Okosgazdi.hu-n</span></div>
-      <a href="https://okosgazdi.hu/prima-energy-marhaval-es-sertessel?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=delikan-red-meat" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál →</a>
+      <a href="https://okosgazdi.hu/prima-energy-marhaval-es-sertessel?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=delikan-red-meat" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál →</a>
     </div>
 
   </main>
@@ -685,7 +692,7 @@
     </div>
 
     <div style="text-align:center;">
-      <a href="https://okosgazdi.hu/prima-energy-marhaval-es-sertessel?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=delikan-red-meat" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener">🛒 Megveszem →</a>
+      <a href="https://okosgazdi.hu/prima-energy-marhaval-es-sertessel?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=delikan-red-meat" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Megveszem →</a>
     </div>
   </aside>
 </div>
@@ -706,5 +713,6 @@
   </div>
 </footer>
 
+<script>lucide.createIcons();</script>
 </body>
 </html>

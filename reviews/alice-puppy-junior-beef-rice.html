@@ -194,7 +194,14 @@
     .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 1.5rem 0; }
     .footer-copy { font-size: 0.82rem; color: rgba(255,255,255,0.3); }
     @media (max-width: 600px) { .nav-links { display: none; } }
+    /* Lucide SVG icon sizing */
+    .section-icon svg, .review-icon svg { display: block; width: 2rem; height: 2rem; }
+    .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    .hero-cta-group .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    a.btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
   </style>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -232,7 +239,7 @@
         <span class="stars-count">/ 5.0 — 76 értékelés</span>
       </div>
       <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="https://okosgazdi.hu/alice-puppy-junior-beef-and-rice?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=alice-puppy-beef" class="btn btn-primary" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál</a>
+        <a href="https://okosgazdi.hu/alice-puppy-junior-beef-and-rice?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=alice-puppy-beef" class="btn btn-primary" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál</a>
         <a href="#osszefoglalo" class="btn btn-outline-white">Gyors összefoglaló</a>
       </div>
     </div>
@@ -288,7 +295,7 @@
     </div>
 
     <div class="block">
-      <h2 class="block-title"><span>🔬</span>Összetevő-elemzés</h2>
+      <h2 class="block-title"><span><i data-lucide="microscope"></i></span>Összetevő-elemzés</h2>
       <table class="ing-table">
         <thead>
           <tr><th>Tápanyag</th><th>Érték</th><th>Értékelés</th><th>Megjegyzés</th></tr>
@@ -330,7 +337,7 @@
     </div>
 
     <div class="block">
-      <h2 class="block-title"><span>💬</span>Közösségi értékelések</h2>
+      <h2 class="block-title"><span><i data-lucide="message-circle"></i></span>Közösségi értékelések</h2>
       <div class="review-grid">
         <div class="review-card">
           <div class="review-header">
@@ -420,7 +427,7 @@
       <h2>A legjobb Alice kölyökkutyáknak</h2>
       <p>38%+ húsliszt, hal, rizs, F.O.S. — 28% fehérje, csirkementes, 735 Ft/kg.</p>
       <div class="cta-price">12.490 Ft <span>/ 17 kg • 735 Ft/kg • Okosgazdi.hu-n</span></div>
-      <a href="https://okosgazdi.hu/alice-puppy-junior-beef-and-rice?utm_source=okosgazdireviews&utm_medium=cta&utm_campaign=alice-puppy-beef" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál →</a>
+      <a href="https://okosgazdi.hu/alice-puppy-junior-beef-and-rice?utm_source=okosgazdireviews&utm_medium=cta&utm_campaign=alice-puppy-beef" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál →</a>
     </div>
 
   </main>
@@ -460,7 +467,7 @@
       </ul>
     </div>
     <div style="text-align:center;">
-      <a href="https://okosgazdi.hu/alice-puppy-junior-beef-and-rice?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=alice-puppy-beef" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener">🛒 Megveszem →</a>
+      <a href="https://okosgazdi.hu/alice-puppy-junior-beef-and-rice?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=alice-puppy-beef" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Megveszem →</a>
     </div>
   </aside>
 </div>
@@ -483,5 +490,6 @@
   </div>
 </footer>
 
+<script>lucide.createIcons();</script>
 </body>
 </html>

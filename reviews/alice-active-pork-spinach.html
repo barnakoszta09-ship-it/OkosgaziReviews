@@ -194,7 +194,14 @@
     .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 1.5rem 0; }
     .footer-copy { font-size: 0.82rem; color: rgba(255,255,255,0.3); }
     @media (max-width: 600px) { .nav-links { display: none; } }
+    /* Lucide SVG icon sizing */
+    .section-icon svg, .review-icon svg { display: block; width: 2rem; height: 2rem; }
+    .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    .hero-cta-group .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    a.btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
   </style>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -215,14 +222,14 @@
       <div class="hero-breadcrumb">
         <a href="../index.html">Főoldal</a> › <a href="../index.html#reviews">Review-k</a> › Alice Adult Active Pork & Spinach
       </div>
-      <div class="hero-badge">🧪 Közösségi értékelések alapján</div>
+      <div class="hero-badge"><i data-lucide="flask-conical"></i> Közösségi értékelések alapján</div>
       <h1>Alice Adult Active<br />Pork & Spinach — Review</h1>
       <p class="hero-sub">Min. 35% sertéshúsliszt, spenót, csirkementes formula aktív felnőtt kutyáknak. 26% fehérje, 14% zsír — a legenergiadúsabb Alice változat.</p>
       <div class="hero-meta">
         <span class="meta-tag">🐕 Felnőtt kutyáknak</span>
         <span class="meta-tag">⚡ Aktív / Sport</span>
         <span class="meta-tag">🥩 Sertés 35%+</span>
-        <span class="meta-tag">🥬 Spenótos</span>
+        <span class="meta-tag"><i data-lucide="leaf"></i> Spenótos</span>
         <span class="meta-tag">🚫 Csirkementes</span>
         <span class="meta-tag">📦 17 kg</span>
       </div>
@@ -232,7 +239,7 @@
         <span class="stars-count">/ 5.0 — 16 értékelés</span>
       </div>
       <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-        <a href="https://okosgazdi.hu/alice-adult-active-pork-and-spinach?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=alice-active-spinach" class="btn btn-primary" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál</a>
+        <a href="https://okosgazdi.hu/alice-adult-active-pork-and-spinach?utm_source=okosgazdireviews&utm_medium=review&utm_campaign=alice-active-spinach" class="btn btn-primary" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál</a>
         <a href="#osszefoglalo" class="btn btn-outline-white">Gyors összefoglaló</a>
       </div>
     </div>
@@ -287,7 +294,7 @@
     </div>
 
     <div class="block">
-      <h2 class="block-title"><span>🔬</span>Összetevő-elemzés</h2>
+      <h2 class="block-title"><span><i data-lucide="microscope"></i></span>Összetevő-elemzés</h2>
       <table class="ing-table">
         <thead>
           <tr><th>Tápanyag</th><th>Érték</th><th>Értékelés</th><th>Megjegyzés</th></tr>
@@ -329,7 +336,7 @@
     </div>
 
     <div class="block">
-      <h2 class="block-title"><span>💬</span>Közösségi értékelések</h2>
+      <h2 class="block-title"><span><i data-lucide="message-circle"></i></span>Közösségi értékelések</h2>
       <div class="review-grid">
         <div class="review-card">
           <div class="review-header">
@@ -420,7 +427,7 @@
       <h2>Aktív kutyádnak a legjobb Alice változat</h2>
       <p>Sertés + spenót formula, 682 Ft/kg — az Alice termékcsalád legenergiadúsabb változata.</p>
       <div class="cta-price">11.590 Ft <span>/ 17 kg • 682 Ft/kg • Okosgazdi.hu-n</span></div>
-      <a href="https://okosgazdi.hu/alice-adult-active-pork-and-spinach?utm_source=okosgazdireviews&utm_medium=cta&utm_campaign=alice-active-spinach" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener">🛒 Vásárold meg az Okosgazdinál →</a>
+      <a href="https://okosgazdi.hu/alice-adult-active-pork-and-spinach?utm_source=okosgazdireviews&utm_medium=cta&utm_campaign=alice-active-spinach" class="btn btn-primary" style="font-size:1.1rem; padding:1rem 2.5rem;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Vásárold meg az Okosgazdinál →</a>
     </div>
 
   </main>
@@ -459,7 +466,7 @@
       </ul>
     </div>
     <div style="text-align:center;">
-      <a href="https://okosgazdi.hu/alice-adult-active-pork-and-spinach?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=alice-active-spinach" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener">🛒 Megveszem →</a>
+      <a href="https://okosgazdi.hu/alice-adult-active-pork-and-spinach?utm_source=okosgazdireviews&utm_medium=sidebar&utm_campaign=alice-active-spinach" class="btn btn-primary" style="width:100%; justify-content:center;" target="_blank" rel="noopener"><i data-lucide="shopping-cart"></i> Megveszem →</a>
     </div>
   </aside>
 </div>
@@ -479,5 +486,6 @@
   </div>
 </footer>
 
+<script>lucide.createIcons();</script>
 </body>
 </html>

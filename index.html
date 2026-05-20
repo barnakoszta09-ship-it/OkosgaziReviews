@@ -25,6 +25,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -332,6 +334,18 @@
       box-shadow: var(--shadow-hover);
       border-top-color: var(--gold);
     }
+
+    /* Lucide SVG icon sizing */
+    .value-icon svg, .cat-icon svg, .trust-icon svg, .upcoming-emoji svg { display: block; }
+    .value-icon svg { width: 2.2rem; height: 2.2rem; }
+    .cat-icon svg { width: 2.5rem; height: 2.5rem; }
+    .trust-icon svg { width: 2.8rem; height: 2.8rem; }
+    .upcoming-emoji svg { width: 2rem; height: 2rem; }
+    .featured-visual-emoji svg { width: 4rem; height: 4rem; }
+    .btn svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.3em; }
+    .hero-badge svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.25em; }
+    .featured-badge svg { width: 1em; height: 1em; vertical-align: -0.125em; margin-right: 0.25em; }
+    .upcoming-soon-badge svg { width: 0.9em; height: 0.9em; vertical-align: -0.1em; margin-right: 0.2em; }
 
     .value-icon {
       font-size: 2.2rem;
@@ -662,11 +676,11 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-inner">
-      <div class="hero-badge">🐾 Kutyatáp review platform</div>
+      <div class="hero-badge"><i data-lucide="paw-print"></i> Kutyatáp review platform</div>
       <h1>Válassz okosan —<br /><em>a legjobb táplálékot</em><br />a kutyádnak</h1>
       <p class="hero-sub">Összetevő-elemzés, közösségi értékelések, ár-érték összehasonlítások — hogy megalapozott döntést hozz a kutyád táplálásában.</p>
       <div class="hero-cta-group">
-        <a href="#reviews" class="btn btn-primary">📋 Review-k böngészése</a>
+        <a href="#reviews" class="btn btn-primary"><i data-lucide="clipboard-list"></i> Review-k böngészése</a>
         <a href="https://okosgazdi.hu?utm_source=okosgazdireviews&utm_medium=hero" class="btn btn-outline" target="_blank" rel="noopener">Okosgazdi webshop</a>
       </div>
       <div class="hero-stats">
@@ -694,17 +708,17 @@
       <p class="section-desc">Összetevő-elemzés, közösségi visszajelzések és ár-érték összehasonlítás — hogy megalapozott döntést hozz.</p>
       <div class="values-grid">
         <div class="value-card">
-          <div class="value-icon">🔬</div>
+          <div class="value-icon"><i data-lucide="microscope"></i></div>
           <h3>Szerkesztői elemzés</h3>
           <p>Minden terméket saját összetevő-elemzéssel és a közösség valódi véleményeivel vizsgálunk meg.</p>
         </div>
         <div class="value-card">
-          <div class="value-icon">👥</div>
+          <div class="value-icon"><i data-lucide="users"></i></div>
           <h3>Közösségi értékelések</h3>
           <p>Több száz kutyatulajdonos tapasztalatait gyűjtjük össze, hogy valós képet kapj a termékekről — az előnyökről és hátrányokról egyaránt.</p>
         </div>
         <div class="value-card">
-          <div class="value-icon">🔄</div>
+          <div class="value-icon"><i data-lucide="refresh-cw"></i></div>
           <h3>Rendszeresen frissítve</h3>
           <p>A receptúrák és árak változnak — tartalmainkat folyamatosan aktualizáljuk, hogy mindig naprakész információt kapj.</p>
         </div>
@@ -720,7 +734,7 @@
       <p class="section-desc">Részletes elemzés, összetevő-bontás és közösségi visszajelzések — folyamatosan bővülő lista.</p>
       <div class="featured-card" data-tags="aktiv">
         <div>
-          <div class="featured-badge">⭐ Szerkesztői ajánlat</div>
+          <div class="featured-badge"><i data-lucide="star"></i> Szerkesztői ajánlat</div>
           <h3 class="featured-title">Delikan Prima Energy Red Meat</h3>
           <p class="featured-desc">Min. 45% marha + sertés alapú száraztáp aktív kutyáknak. Csirkementes, szójamentes formula — 298 vásárlói értékeléssel.</p>
           <div class="stars">
@@ -734,7 +748,7 @@
           </div>
         </div>
         <div class="featured-visual">
-          <div class="featured-visual-emoji">🥩</div>
+          <div class="featured-visual-emoji"><i data-lucide="beef"></i></div>
           <h4>Összesített pontszám</h4>
           <div class="score-big">4.7</div>
           <p>/ 5.0 — 298 értékelés alapján</p>
@@ -760,7 +774,7 @@
 
         <a href="reviews/alice-active-pork-spinach.html" class="upcoming-card" data-tags="aktiv" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.5 · Közösségi: 4.7</div>
-          <div class="upcoming-emoji">🥬</div>
+          <div class="upcoming-emoji"><i data-lucide="leaf"></i></div>
           <div class="upcoming-brand">Alice</div>
           <h3 class="upcoming-name">Alice Adult Active Pork &amp; Spinach</h3>
           <p class="upcoming-desc">Sertés + spenót formula aktív kutyáknak — 26% fehérje, csirkementes. 16 értékelés.</p>
@@ -769,7 +783,7 @@
 
         <a href="reviews/alice-balance-lamb-pumpkin.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.4 · Közösségi: 4.7</div>
-          <div class="upcoming-emoji">🐑</div>
+          <div class="upcoming-emoji"><i data-lucide="leaf"></i></div>
           <div class="upcoming-brand">Alice</div>
           <h3 class="upcoming-name">Alice Adult Balance Lamb &amp; Pumpkin</h3>
           <p class="upcoming-desc">Bárány + tök formula — csirkementes, a legnépszerűbb Alice változat.</p>
@@ -778,7 +792,7 @@
 
         <a href="reviews/alice-balance-plus-rabbit-lamb.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.2 · Közösségi: 4.6</div>
-          <div class="upcoming-emoji">🐇</div>
+          <div class="upcoming-emoji"><i data-lucide="rabbit"></i></div>
           <div class="upcoming-brand">Alice</div>
           <h3 class="upcoming-name">Alice Adult Balance+ Rabbit &amp; Lamb</h3>
           <p class="upcoming-desc">Nyúl + bárány + vörösáfonya — prémiumabb változat érzékeny kutyáknak.</p>
@@ -787,7 +801,7 @@
 
         <a href="reviews/alice-croquettes-pork-potato.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 3.7 · Közösségi: 4.3</div>
-          <div class="upcoming-emoji">🥔</div>
+          <div class="upcoming-emoji"><i data-lucide="leaf"></i></div>
           <div class="upcoming-brand">Alice</div>
           <h3 class="upcoming-name">Alice Adult Croquettes Pork &amp; Potato</h3>
           <p class="upcoming-desc">Sertés + burgonya, csirkementes — legjobb ár az Alice-ban: 594 Ft/kg.</p>
@@ -796,7 +810,7 @@
 
         <a href="reviews/alice-puppy-junior-beef-rice.html" class="upcoming-card" data-tags="kolyok" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.3 · Közösségi: 4.6</div>
-          <div class="upcoming-emoji">🐾</div>
+          <div class="upcoming-emoji"><i data-lucide="paw-print"></i></div>
           <div class="upcoming-brand">Alice</div>
           <h3 class="upcoming-name">Alice Puppy &amp; Junior Beef &amp; Rice</h3>
           <p class="upcoming-desc">Marha + hal + rizs — 28% fehérje, csirkementes kölyök és junior kutyáknak.</p>
@@ -805,7 +819,7 @@
 
         <a href="reviews/ambrosia-dog-adult-lamb-salmon.html" class="upcoming-card" data-tags="allergiás" style="display:block; text-decoration:none;">
           <div class="upcoming-soon-badge" style="background:#e6f7ed; color:#1a6b3a; border-color:#b8e8c8;">Szerkesztői: 4.6 · Közösségi: 4.9</div>
-          <div class="upcoming-emoji">🐟</div>
+          <div class="upcoming-emoji"><i data-lucide="fish"></i></div>
           <div class="upcoming-brand">Ambrosia</div>
           <h3 class="upcoming-name">Ambrosia Dog Adult GF Lamb &amp; Fresh Salmon</h3>
           <p class="upcoming-desc">Gabonamentes prémium táp — 18% friss lazac, 32% fehérje, glükózamin & kondroitin.</p>
@@ -813,8 +827,8 @@
         </a>
 
         <div class="upcoming-card">
-          <div class="upcoming-soon-badge">⏳ Hamarosan</div>
-          <div class="upcoming-emoji">🍲</div>
+          <div class="upcoming-soon-badge"><i data-lucide="timer"></i> Hamarosan</div>
+          <div class="upcoming-emoji"><i data-lucide="utensils"></i></div>
           <div class="upcoming-brand">Food Studio</div>
           <h3 class="upcoming-name">Food Studio Csontleves kutyáknak</h3>
           <p class="upcoming-desc">Kollagénben gazdag kiegészítő táplálék — ízületek és emésztés természetes támogatása.</p>
@@ -833,22 +847,22 @@
       <p class="section-desc">Szűrj a kutyád igényei alapján — a tesztelt termékek között megtalálod az életmódhoz illő táplálékot.</p>
       <div class="categories-grid">
         <div class="cat-card" data-filter="allergiás">
-          <div class="cat-icon">🌸</div>
+          <div class="cat-icon"><i data-lucide="shield-check"></i></div>
           <h3>Allergiás kutyáknak</h3>
           <p>Gabonamentes, hipoallergén formulák érzékeny emésztésű kutyáknak</p>
         </div>
         <div class="cat-card" data-filter="aktiv">
-          <div class="cat-icon">🏃</div>
+          <div class="cat-icon"><i data-lucide="zap"></i></div>
           <h3>Aktív kutyáknak</h3>
           <p>Energia-sűrű, magas fehérjetartalmú tápok sportos, munkakutyáknak</p>
         </div>
         <div class="cat-card" data-filter="kolyok">
-          <div class="cat-icon">🐶</div>
+          <div class="cat-icon"><i data-lucide="paw-print"></i></div>
           <h3>Kölyökkutyáknak</h3>
           <p>Optimális fejlődést támogató, DHA-dús formulák 1 éves korig</p>
         </div>
         <div class="cat-card" data-filter="senior">
-          <div class="cat-icon">🦴</div>
+          <div class="cat-icon"><i data-lucide="heart"></i></div>
           <h3>Senior kutyáknak</h3>
           <p>Ízület- és szívvédő összetevőkkel, könnyebben emészthető receptúrák</p>
         </div>
@@ -864,22 +878,22 @@
       <p class="section-desc">Összetevő-elemzés és közösségi értékelések egy helyen — hogy pontosan tudd, mit adsz a kutyádnak.</p>
       <div class="trust-grid">
         <div class="trust-item">
-          <div class="trust-icon">🧪</div>
+          <div class="trust-icon"><i data-lucide="flask-conical"></i></div>
           <h3>Összetevő-elemzés</h3>
           <p>Minden terméknél részletesen elemezzük az összetevőket és tápanyag-arányokat — nem csak a marketing szöveget nézzük meg.</p>
         </div>
         <div class="trust-item">
-          <div class="trust-icon">⭐</div>
+          <div class="trust-icon"><i data-lucide="star"></i></div>
           <h3>Szerkesztői pontszám</h3>
           <p>Saját értékelési módszertanunk alapján adunk pontszámot — fehérjetartalom, összetevők minősége és ár-érték arány szerint.</p>
         </div>
         <div class="trust-item">
-          <div class="trust-icon">💬</div>
+          <div class="trust-icon"><i data-lucide="message-circle"></i></div>
           <h3>Közösségi visszajelzések</h3>
           <p>Valódi vásárlói értékeléseket gyűjtünk össze, hogy a saját elemzésünket valós felhasználói tapasztalatokkal egészítsük ki.</p>
         </div>
         <div class="trust-item">
-          <div class="trust-icon">🔄</div>
+          <div class="trust-icon"><i data-lucide="refresh-cw"></i></div>
           <h3>Rendszeres frissítések</h3>
           <p>A receptúrák és árak változnak — review-jainkat folyamatosan aktualizáljuk, hogy mindig naprakész információt kapj.</p>
         </div>
@@ -956,6 +970,7 @@
     });
   });
 }());
+lucide.createIcons();
 </script>
 
 </body>
